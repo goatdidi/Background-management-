@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盼达旅游网-PANDA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/travel.css">
+</head>
+<body>
+    <div class="panda_container">
+        <div class="panda_nav_bar">
+            <div class="panda_nav_bar_cont">
+                <div class="slogan">旅行的意义</div>
+                <ul class="nav-bar-set">
+                    <li class="set-list set-logIn" id="nav-bar-set-login" style="display: block;">
+                        <a class="person-text" href="./html/login.html" style="cursor:pointer;">
+                            <span class="set-text">
+                                <span class="member-name" name="nav-bar-mname">您好</span>，请登录 
+                            </span>
+                            </a>
+                    </li>
+                    <li class="set-list" id="nav-bar-set-reg" style="display: block;">
+                        <a class="person-text nav-per" href="./html/register.html">
+                            <span class="set-text"> 免费注册 </span>
+                        </a>
+                    </li>
+                    <li class="set-list" id="nav-bar-set-reg" style="display: block;">
+                        <a class="person-text nav-per"  href="./html/person_center.html">
+                            <span class="set-text"> 个人中心 </span>
+                        </a>
+                    </li>
+                    <li class="set-list set-wechat" name="cui-nav-bar-set-list">
+                        <a href="#" class="person-text nav-myctrip"><span class="set-text">易腾创想</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panda_hd_cont">
+            <div class="panda_hd">
+                <div class="pandaLogo">
+                    <a href="./index.html" title="盼达旅游网-PANDA">盼达旅游网</a>
+                </div>
+                <div class="panda_search">
+                    <input type="text" class="panda_search_input"  placeholder="搜索旅行地/酒店/旅游/景点门票/交通">
+                    <button type="button" class="panda_search_button">
+                        <img src="../imgs/search.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="panda_nav_single">
+            <div class="panda_nav">
+                <ul  class="panda_nav_ul">
+                    <li class="panda_nav_li active"><a>首页</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>酒店</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>旅游</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>攻略</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>自由行</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>机票</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>火车</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>汽车 · 船</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>用车</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>门票</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>跟团游</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>全球购</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>礼品卡</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>商旅</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>邮轮</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>目的地</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>金融</a></li>
+                    <li class="divider "></li>
+                    <li class="panda_nav_li"><a>更多</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="travel_container">
+            <!-- 当季推荐 -->
+            <div class="bd_recommend bg_gary">
+                <div class="wrap">
+                    <div class="title">
+                        <h2 class="djtj">当季推荐</h2>
+                    </div>
+                    <div class="photo_recommend">
+                        <div class="pic">
+                            <div class="img_wrapper">
+                                <a href="javascript:void(0);">
+                                    <img src="../imgs/travel/recommend_img1.jpeg" alt="">
+                                    <div class="bg_content">
+                                        <div class="title_wrapper">
+                                            <p class="title">5月去哪玩</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <div class="img_wrapper">
+                                <a href="javascript:void(0);">
+                                    <img src="../imgs/travel/recommend_img2.jpeg" alt="">
+                                    <div class="bg_content">
+                                        <div class="title_wrapper">
+                                            <p class="title">人均500的周边游目的地</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <div class="img_wrapper">
+                                <a href="javascript:void(0);">
+                                    <img src="../imgs/travel/recommend_img3.jpeg" alt="">
+                                    <div class="bg_content">
+                                        <div class="title_wrapper">
+                                            <p class="title">假装在国外！不出境带你环游世界</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /当季推荐 -->
+
+            <!-- 周边游 -->
+            <div class="bd_recommend bg_gary zby_recommend">
+                <div class="wrap">
+                    <div class="title">
+                        <h2 class="zby">周边游<span> | 成都</span></h2>
+                    </div>
+                    <div class="photo_recommend">
+                        <div class="chendu_content">
+                            <ul class="list">
+                                <li class="around_item">
+                                    <img width="224" height="170" src="../imgs/travel/zby1.jpg" alt="">
+                                    <span class="name">青城天下幽</span>
+                                </li>
+                                <li class="around_item">
+                                    <img width="224" height="170" src="../imgs/travel/zby2.jpg" alt="">
+                                    <span class="name">八美草原</span>
+                                </li>
+                                <li class="around_item">
+                                    <img width="224" height="170" src="../imgs/travel/zby3.jpg" alt="">
+                                    <span class="name">东拉山大峡谷</span>
+                                </li>
+                                <li class="around_item">
+                                    <img width="224" height="170" src="../imgs/travel/zby4.jpg" alt="">
+                                    <span class="name">中国水蜜桃之乡</span>
+                                </li>
+                                <li class="around_item">
+                                    <img width="224" height="170" src="../imgs/travel/zby5.jpg" alt="">
+                                    <span class="name">天生三桥赏奇观</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /周边游 -->
+
+            <!-- 攻略游记 -->
+            <div class="bd_recommend raiders_note ">
+                <div class="wrap">
+                    <div class="note_lt lf">
+                        <div class="title">
+                            <h2 class="djtj">攻略游记</h2>
+                        </div>
+                        <div class="notes_content">
+                            <dl class="b-dest-tab">
+                                <dt>目的地</dt>
+                                <dd>
+                                    <a class="active" href="javascript:void(0);" >全部</a>
+                                    <a href="javascript:void(0);" >成都</a>
+                                    <a href="javascript:void(0);" >上海</a>
+                                    <a href="javascript:void(0);" >重庆</a>
+                                    <a href="javascript:void(0);" >西安</a>
+                                    <a href="javascript:void(0);" >北京</a>
+                                    <a href="javascript:void(0);" >杭州</a>
+                                    <a href="javascript:void(0);" >三亚</a>
+                                </dd>
+                            </dl>
+                            <ul class="note_ul">
+                                <li class="note_li">
+                                    <div class="face">
+                                        <img src="../imgs/travel/user.jpg" width="50" height="50" alt="" title="这是用户的名字啦">
+                                    </div>
+                                    <div class="note_tit title">
+                                        <h2>
+                                            #跟着白大叔逛吃逛吃# 将《街头美食斗士》中的小吃一网打尽 | 成都篇
+                                        </h2>
+                                    </div>
+                                    <div class="person">
+                                        <a href="javascript:;" class="note_name">这是用户的名字呢</a>
+                                        <span class="c99">2018-08-02&nbsp;出发</span>
+                                        <span class="c99">
+                                            <span class="note_vline">|</span>
+                                            共3天
+                                        </span>
+                                        <ul class="nums clrfix">
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span>2.6万</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-circle-arrow-up"></i>
+                                                <span>48</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-comment"></i>
+                                                <span>3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">途径：</dt>
+                                        <dd>成都</dd>
+                                    </dl>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">行程：</dt>
+                                        <dd class="place">奇味烧烤</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">军屯锅盔</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">陈麻婆豆腐(骡马市店)</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">马路边边麻辣烫(致民路直营店)</dd>
+                                    </dl>
+                                    <ul class="imgul">
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img1.jpg" alt="">
+                                        </li>
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img2.jpg" alt="">
+                                        </li>
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img3.jpg" alt="">
+                                        </li>
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img4.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="note_li">
+                                    <div class="face">
+                                        <img src="../imgs/travel/user.jpg" width="50" height="50" alt="" title="这是用户的名字啦">
+                                    </div>
+                                    <div class="note_tit title">
+                                        <h2>成都，一个美食爱好者的首选城市</h2>
+                                    </div>
+                                    <div class="person">
+                                        <a href="javascript:;" class="note_name">这是用户的名字呢</a>
+                                        <span class="c99">2020-01-02&nbsp;出发</span>
+                                        <span class="c99">
+                                            <span class="note_vline">|</span>
+                                            共7天
+                                        </span>
+                                        <ul class="nums clrfix">
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span>21.6万</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-circle-arrow-up"></i>
+                                                <span>148</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-comment"></i>
+                                                <span>131</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">途径：</dt>
+                                        <dd>成都</dd>
+                                    </dl>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">行程：</dt>
+                                        <dd class="place">春熙路</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">文殊坊</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">宽窄巷子</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">杜甫草堂</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">人民公园</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">天府广场</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">青羊宫</dd>
+                                    </dl>
+                                    <ul class="imgul">
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img6.jpg" alt="">
+                                        </li>
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img7.jpg" alt="">
+                                        </li>
+                                       
+                                    </ul>
+                                </li>
+                                <li class="note_li">
+                                    <div class="face">
+                                        <img src="../imgs/travel/user.jpg" width="50" height="50" alt="" title="这是用户的名字啦">
+                                    </div>
+                                    <div class="note_tit title">
+                                        <h2>
+                                            成都 请赐我一场人间烟火|城西三日行记
+                                        </h2>
+                                    </div>
+                                    <div class="person">
+                                        <a href="javascript:;" class="note_name">这是用户的名字呢</a>
+                                        <span class="c99">2018-08-02&nbsp;出发</span>
+                                        <span class="c99">
+                                            <span class="note_vline">|</span>
+                                            共3天
+                                        </span>
+                                        <ul class="nums clrfix">
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span>2.6万</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-circle-arrow-up"></i>
+                                                <span>48</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-comment"></i>
+                                                <span>3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">途径：</dt>
+                                        <dd>成都</dd>
+                                    </dl>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">行程：</dt>
+                                        <dd class="place">奇味烧烤</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">军屯锅盔</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">陈麻婆豆腐(骡马市店)</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">马路边边麻辣烫(致民路直营店)</dd>
+                                    </dl>
+                                    <ul class="imgul">
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img8.jpg" alt="">
+                                        </li>
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img9.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="note_li">
+                                    <div class="face">
+                                        <img src="../imgs/travel/user.jpg" width="50" height="50" alt="" title="这是用户的名字啦">
+                                    </div>
+                                    <div class="note_tit title">
+                                        <h2>
+                                            成都的悠闲慢生活
+                                        </h2>
+                                    </div>
+                                    <div class="person">
+                                        <a href="javascript:;" class="note_name">这是用户的名字呢</a>
+                                        <span class="c99">2018-08-02&nbsp;出发</span>
+                                        <span class="c99">
+                                            <span class="note_vline">|</span>
+                                            共3天
+                                        </span>
+                                        <ul class="nums clrfix">
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span>2.6万</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-circle-arrow-up"></i>
+                                                <span>48</span>
+                                            </li>
+                                            <li class="numTab">
+                                                <i class="glyphicon glyphicon-comment"></i>
+                                                <span>3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">途径：</dt>
+                                        <dd>成都</dd>
+                                    </dl>
+                                    <dl class="cont_dl c66 clrfix">
+                                        <dt class="detit c99 lf">行程：</dt>
+                                        <dd class="place">奇味烧烤</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">军屯锅盔</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">陈麻婆豆腐(骡马市店)</dd>
+                                        <dd class="aline c99">&gt;</dd>
+                                        <dd class="place">马路边边麻辣烫(致民路直营店)</dd>
+                                    </dl>
+                                    <ul class="imgul">
+                                        <li class="imgli">
+                                            <img src="../imgs/travel/gonglve_img10.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="note_rt rt">
+                        <div class="weixin">
+                            <div class="title">
+                                <h2>微信关注盼达攻略</h2>
+                            </div>
+                            <div class="detail clrfix">
+                                <img src="../imgs/travel/erweima.jpg" width="112" height="112" class="erCode lf">
+                                <p class="detailP">扫码关注易腾君~ 能在第一时间收到最新活动的通知！避免错过福利喔~ 更有免费旅行等你来！</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- /攻略游记 -->
+        </div>
+
+        <!-- 工具栏 -->
+        <div class="pd_tool">
+            <div class="to_top" id="toTop">
+                <i class="glyphicon glyphicon-menu-up"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="panda_footer">
+        <div class="mod copyright">
+            <p class="copyright">
+                Copyright©</a>1999-2019,&nbsp;http://www.edu-learn4fun.com/.
+            </p>
+            <p>All rights reserved.&nbsp;|&nbsp;蜀ICP备17005xxx号</p>
+            <p class="supervision-call">
+                旅游咨询：12345678丨成都易腾创想旅游有限公司
+            </p>
+        </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script>
+        var topbtn = $("#toTop"); //想要一键向上的按钮元素
+        var lastScroll = 0; 
+        topbtn.css("display", "none"); 
+        
+        window.onscroll = function(){  //onscroll貌似为html5的属性
+            var top = $(window).scrollTop();//初始均为0 
+            
+            if(top > 0){ 
+                topbtn.css("display", ""); 
+            } 
+            if(top == 0){//若为起始状态，则不显示向上图标 
+                topbtn.css("display", "none"); 
+            } 
+        }; 
+        
+        topbtn.click(function(){ //点击事件
+            var scrollTop = 0; 
+            var curPos = $(window).scrollTop();//现在滚动条的位置 
+            topbtn.addClass("movingtotop"); //运动中显示另外的图片
+            var step = Math.abs(scrollTop - curPos) / 200 ; 
+            var tid = setInterval(function() {//不断调用，帧动成画
+                topbtn.toggleClass("movingtotop"); //精妙的一段代码，用元素属性的设置和删除交替，使得有动态感闪烁效果
+                if (curPos > scrollTop + 14) { 
+                    curPos -= step; 
+                    step = step * 1.05;//速度逐步加快 
+                    window.scrollTo(0, curPos); 
+                } else if (curPos <= scrollTop + 14){//直接跳到起始位置 
+                    window.scrollTo(0, scrollTop); 
+                    topbtn.removeClass("movingtotop"); 
+                    clearInterval(tid); //关闭循环
+                } 
+            }, 0.01); 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+*{
+    margin: 0;padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin:0!important;
+}
+a{
+    text-decoration: none;
+    color: #2ca182;
+}
+a:hover{
+    text-decoration: none;
+    color: #2ca182;
+}
+.panda_container{
+    width: 100%;
+    min-width: 1280px;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+.panda_nav_bar{
+    color: #333;
+    background: #F4F4F4;
+}
+.panda_nav_bar .slogan {
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    margin: 10px 0 0 14px;
+}
+.panda_nav_bar_cont{
+    position: relative;/*相对定位*/
+    z-index: 27;
+    min-width: 1280px;
+    max-width: 1280px;
+    height: 36px;
+    margin: 0 auto;
+    background: #F4F4F4;
+}
+.nav-bar-set{
+    position: absolute;/*绝对定位*/
+    right: 0;
+    top: 0;
+    height: 36px;
+}
+.panda_nav_bar .set-list {
+    float: left;/*浮动布局*/
+    height: 12px;
+    line-height: 12px;
+    margin: 11px 0 0 0;
+    border-right: 1px solid #DDDDDD;
+    position: relative;/*相对定位*/
+}
+.panda_nav_bar .person-text {
+    display: inline-block;
+    margin: -12px -1px 0;
+}
+.panda_nav_bar .person-text .set-text {
+    position: relative;/*相对定位*/
+    display: inline-block;
+    padding: 12px 0px;
+    width: 92px;
+    color: #666;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+.panda_nav_bar .set-logIn.set-list .person-text .set-text {
+    width: 120px;
+    color: #2ca182;
+    border-right: none;
+}
+.panda_hd{
+    position: relative;/*相对定位*/
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+.panda_hd .pandaLogo{
+    display: inline-block;
+    width: 126px;
+    height: 43px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+.panda_hd .pandaLogo a {
+    display: block;
+    width: 126px;
+    height: 43px;
+    background: url(../imgs/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.panda_search{
+    position: absolute;/*绝对定位*/
+    top: 25px;
+    left: 170px;
+    width: 28%;
+    font-family: "Microsoft Yahei", Tahoma;
+   
+}
+.panda_search_input{
+    border-radius: 4px;
+    position: absolute;/*绝对定位*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 0 45px 0 5px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #35b795;
+    box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;
+    outline: 0 none;
+    box-sizing:content-box;
+}
+.panda_search_button{
+    position: absolute;/*绝对定位*/
+    top: 1px;
+    right: -51px;
+    width: 42px;
+    height: 28px;
+    cursor: pointer;
+    background-color: rgb(53, 183, 149);
+    border: 0;
+}
+
+.panda_search_button img{
+    width: 18px;
+    height: 18px;
+    margin: 5px auto;
+}
+.panda_nav_single{
+    width: 100%;
+    background: #35b795;
+    height: 40px;
+}
+.panda_nav_single .panda_nav{
+    width: 1280px;
+    margin: 0 auto;
+    height: 40px;
+    background: #35b795;
+}
+.panda_nav_ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+}
+.panda_nav_ul li{
+    float: left;
+}
+.panda_nav_ul li.active{
+    background: #2ca182;
+}
+.panda_nav_ul .panda_nav_li a{
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.panda_nav_ul li.panda_nav_li:hover{
+    background: #2ca182;
+}
+.panda_nav_ul  .divider{
+    width: 1px;
+    height: 14px;
+    padding-left: 0;
+    margin: 13px 0 0;
+    background-color: #2ca182;
+    clear: none;
+    border: none;
+}
+.panda_footer{
+    padding: 28px 0 30px 0;
+    color: #666;
+    margin-top: 0;
+    width: 1180px;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+
+.panda_center_content{
+    width: 730px;
+    margin: 10px auto;
+    background: #efefef;
+    padding: 10px 10px 10px 8px;
+}
+.panda_center_content .person_box{
+    background-size: 100% 100%;
+    overflow: hidden;
+    background: #35b795;
+}
+.person_box .person_msg{
+    padding: 15px 0px 10px 30px;
+    color: #fff;
+}
+.person_img{
+    width: 78px;
+    height: 78px;
+    display: inline-block;
+    background: url(../imgs/personCenter/border-head.png) no-repeat;
+}
+.person_img img{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+}
+.person_msg .person_name{
+    display: inline-block;
+    margin: 15px 0px 5px 10px;
+}
+.person_msg .person_name p{
+    display: inline-block;
+    width: 190px;
+    line-height: 24px;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(23, 100, 80, 0.5);
+}
+.account_box{
+    padding: 5px 10px;
+    height: 45px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0;
+}
+.account_box li{
+    float: left;
+    text-align: center;
+    width: 20%;
+    color: #999;
+    border-right: 1px solid #efefef;
+}
+.account_box li>a{
+    color: #35b795;
+    text-decoration: none;
+}
+.person_order_box{
+    line-height: 49px;
+    font-size: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.person_order_box .order_title{
+    height: 47px;
+    color: #2ca182;
+    width: 140px;
+    text-align: center;
+    border-bottom: 3px solid #2ca182;
+    cursor: default;
+}
+.person_order_box .order_cotent{
+    text-align: center;
+    color: 666;
+    font-size: 12px;
+    padding: 60px 0;
+}
+.person_order_box .order_cotent img{
+    display: inline-block;
+    width: 112px;
+    height: 108px;
+    vertical-align: middle;
+}

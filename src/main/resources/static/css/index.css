@@ -1,0 +1,521 @@
+*{
+    margin: 0;padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin:0!important;
+}
+a{
+    text-decoration: none;
+    color: #2ca182;
+}
+a:hover{
+    text-decoration: none;
+    color: #2ca182;
+}
+.panda_container{
+    width: 100%;
+    min-width: 1280px;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+.panda_nav_bar{
+    color: #333;
+    background: #F4F4F4;
+}
+.panda_nav_bar .slogan {
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    margin: 10px 0 0 14px;
+}
+.panda_nav_bar_cont{
+    position: relative;/*相对定位*/
+    z-index: 27;
+    min-width: 1280px;
+    max-width: 1280px;
+    height: 36px;
+    margin: 0 auto;
+    background: #F4F4F4;
+}
+.nav-bar-set{
+    position: absolute;/*绝对定位*/
+    right: 0;
+    top: 0;
+    height: 36px;
+}
+.panda_nav_bar .set-list {
+    float: left;/*浮动布局*/
+    height: 12px;
+    line-height: 12px;
+    margin: 11px 0 0 0;
+    border-right: 1px solid #DDDDDD;
+    position: relative;/*相对定位*/
+}
+.panda_nav_bar .person-text {
+    display: inline-block;
+    margin: -12px -1px 0;
+}
+.panda_nav_bar .person-text .set-text {
+    position: relative;/*相对定位*/
+    display: inline-block;
+    padding: 12px 0px;
+    width: 92px;
+    color: #666;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+.panda_nav_bar .set-logIn.set-list .person-text .set-text {
+    width: 120px;
+    color: #2ca182;
+    border-right: none;
+}
+.panda_hd{
+    position: relative;/*相对定位*/
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+.panda_hd .pandaLogo{
+    display: inline-block;
+    width: 126px;
+    height: 43px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+.panda_hd .pandaLogo a {
+    display: block;
+    width: 126px;
+    height: 43px;
+    background: url(../imgs/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.panda_search{
+    position: absolute;/*绝对定位*/
+    top: 25px;
+    left: 170px;
+    width: 28%;
+    font-family: "Microsoft Yahei", Tahoma;
+   
+}
+.panda_search_input{
+    border-radius: 4px;
+    position: absolute;/*绝对定位*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 0 45px 0 5px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #35b795;
+    box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;
+    outline: 0 none;
+    box-sizing:content-box;
+}
+.panda_search_button{
+    position: absolute;/*绝对定位*/
+    top: 1px;
+    right: -51px;
+    width: 42px;
+    height: 28px;
+    cursor: pointer;
+    background-color: rgb(53, 183, 149);
+    border: 0;
+}
+
+.panda_search_button img{
+    width: 18px;
+    height: 18px;
+    margin: 5px auto;
+}
+.panda_nav_single{
+    width: 100%;
+    background: #35b795;
+    height: 40px;
+}
+.panda_nav_single .panda_nav{
+    width: 1280px;
+    margin: 0 auto;
+    height: 40px;
+    background: #35b795;
+}
+.panda_nav_ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+}
+.panda_nav_ul li{
+    float: left;
+}
+.panda_nav_ul li.active{
+    background: #2ca182;
+}
+.panda_nav_ul .panda_nav_li a{
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.panda_nav_ul li.panda_nav_li:hover{
+    background: #2ca182;
+}
+.panda_nav_ul  .divider{
+    width: 1px;
+    height: 14px;
+    padding-left: 0;
+    margin: 13px 0 0;
+    background-color: #2ca182;
+    clear: none;
+    border: none;
+}
+.panda_banner{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    margin-top: 42px;
+}
+.panda_banner .carousel.slide{
+    width: 1920px;
+    height: 340px;
+    overflow: hidden;
+}
+.panda_banner .carousel.slide .carousel-inner{
+    width: 1920px;
+    height: 340px;
+}
+@media (max-width:1366px) {
+    .panda_banner .carousel.slide .carousel-inner{
+        transform: translateX(-285px);
+    }
+    .carousel-indicators{
+        transform: translateX(-285px);
+    }
+}
+.panda_banner .carousel.slide .carousel-inner img{
+    height: 340px;
+    width: 1920px;
+}
+/**
+内容样式开始
+*/
+.panda_content{
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.mod{
+    width: 1280px;
+    margin: 28px auto 0;
+}
+.mod_hd{
+    height: 36px;
+    border-bottom: 2px solid #35b795;
+    text-align: left;
+}
+.mod_hd .title{
+    width: 100%;
+    height: 36px;
+}
+.mod_hd .title span{
+    height: 36px;
+    line-height: 30px;
+    color: #333;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    color: #35b795;
+}
+.mod_hd .title span img{
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    margin-left: -16px;
+}
+.product{
+    overflow: hidden;
+}
+.inner-tabs-nav {
+    height: 20px;
+    margin-bottom: 10px;
+}
+.inner-tabs-nav li {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 8px;
+}
+.inner-tabs-nav li a{
+    text-decoration: none;
+    color: #2ca182;
+}
+.inner-tabs-nav li.active a {
+    color: #fff;
+    cursor: default;
+}
+.inner-tabs-nav li.active, .inner-tabs-nav li:hover, .inner-tabs-nav li:hover a {
+    background: #35b795;
+    color: #fff;
+    border-radius: 3px;
+}
+.product_body{
+    overflow: hidden;
+}
+
+.destination_list_left{
+    margin-left: -10px;
+    width: 920px;
+    height: 330px;
+    float: left;
+}
+.destination_list_right{
+    float: right;
+}
+.destination_list_right a{
+    display: inline-block;
+}
+.product .product_item{
+    height: 160px;
+    width: 220px;
+    margin: 0 0 10px 10px;
+    position: relative;
+    float: left;
+}
+.product .product_item .item{
+    width: 220px;
+    height: 160px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    position: relative;
+}
+.product .product_item .item img{
+    width: 220px;
+    height: 160px;
+}
+.product .product_item .item span{
+    display: inline-block;
+    position: absolute;
+    background: #FF6913;
+    border-radius: 0 0 10px 0;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 11px 0 6px;
+    color: #fff;
+    top: 0;
+    left:0;
+}
+.product .product_item .item_msg{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: -55px 0 0 -55px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    padding: 30px 5px;
+    color: #fff;
+}
+.item_msg .item_name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.item_msg .item_info{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.item_msg .item_info .price i{
+    color: #ff6600;
+    font-size: 22px;
+    font-style: normal;
+}
+.item_msg p{
+    margin: 0;
+}
+.hotel_list_middle{
+    width: 700px;
+    height: 330px;
+    float: left;
+    margin-left: -10px;
+    /* padding-left: 20px; */
+}
+.hotel_list_right{
+    float: right;
+}
+.hotel_list_right a{
+    display: inline-block;
+}
+.hotel_msg_left{
+    float: left;
+    width: 187px;
+    height: 360px;
+    padding: 0 20px 15px;
+    overflow: hidden;
+}
+.product_head{
+    overflow: hidden;
+}
+.popular_destination_body{
+    height: 395px;
+    padding: 15px 19px 0px;
+    background: #fff;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    overflow: hidden;
+}
+.hotel_body{
+    height: 395px;
+    padding: 15px 19px 0px;
+    background: #fff;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    overflow: hidden;
+}
+.hotel_body .product{
+    float: right;
+    padding-left: 20px;
+    border-left: 1px dotted #a3a3a3;
+}
+.hotel_msg_left dl.keyword-long{
+    margin: 0px 0 7px 0;
+    overflow: hidden;
+}
+.hotel_msg_left dt{
+    padding: 4px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.hotel_msg_left dd {
+    margin-left: -10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hotel_msg_left dd span{
+    position: relative;
+    float: left;
+    display: block;
+    border-left: 1px solid #ececec;
+    padding: 0 10px;
+    line-height: 18px;
+    height: 18px;
+    margin: 7px 0;
+}
+.hotel_msg_left dd span a{
+    color: #666;
+    text-decoration: none;
+}
+.hotel_msg_left dd span a:hover{
+    color: #2ca182;
+}
+.hotel_list_middle .product_item .item_msg{
+    padding: 20px 5px;
+}
+.airplane_list_left{
+    float: left;
+    width: 920px;
+}
+
+.airplane_body{
+    height: 395px;
+    padding: 15px 19px 0px;
+    background: #fff;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    overflow: hidden;
+}
+.airplane_list_left .product_item{
+    margin: 0 10px 10px 0;
+    width: 218px;
+    height: 104px;
+    padding: 15px 12px;
+    background: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    cursor: pointer;
+}
+.airplane_list_left .product_item a{
+    display: block;
+    text-decoration: none;
+}
+.airplane_list_left .product_item:hover{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+.airplane_list_left .product_item .item-name {
+    margin-bottom: 3px;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    display: flex;
+}
+.airplane_list_left .product_item .item-name i.icon_round{
+    background: url(../imgs/icon_right.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    display: inline-block;
+}
+.airplane_list_left .product_item .item-info {
+    height: 27px;
+    text-align: right;
+    padding: 0 5px;
+    color: #666;
+   
+}
+.airplane_list_left .product_item .item-info span.date{
+    padding: 0;
+    color: #999;
+    float: left;
+}
+.airplane_list_left .product_item .item-info span.price{
+    float: left;
+}
+.airplane_list_left .product_item .item-info span.price i{
+    font-size: 22px;
+    color: #f60;
+    font-style: normal;
+}
+span.button.gobuy{
+    display: inline-block;
+    width: auto;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 3px 0 0 0;
+    background-color: #ffb000;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+}
+.panda_footer{
+    padding: 28px 0 30px 0;
+    color: #666;
+    margin-top: 0;
+    /* width: 1280px; */
+    margin: 28px auto 0;
+    text-align: center;
+}

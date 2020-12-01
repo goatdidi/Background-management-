@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改景点</title>
+<link rel="stylesheet" type="text/css"
+	href="/css/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/theme.css">
+<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
+<script src="/css/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<ul class="breadcrumb">
+		<li><a href="/spots/list">景点管理</a> <span class="divider">/</span></li>
+		<li class="active">修改景点</li>
+	</ul>
+	<div class="alert">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<h4>提示!</h4>
+		<strong >[[${msg}]]</strong>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<form class="form-horizontal" action="/spots/edit" method="post"
+				enctype="multipart/form-data">
+				<div class="control-group" readonly="readonly">
+					<label class="control-label" for="spotsid">景点id</label>
+					<div class="controls">
+						<input id="spotsid" type="text" name="spotsid" th:value="${spots.spotsid}" readonly="readonly"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsname">景点名称</label>
+					<div class="controls">
+						<input id="spotsname" type="text" name="spotsname" th:value="${spots.spotsname}"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsaddr">景点地址</label>
+					<div class="controls">
+						<input id="spotsaddr" type="text" name="spotsaddr" th:value="${spots.spotsaddr}"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsaddr2">景点地址经纬度</label>
+					<div class="controls">
+						<input id="spotsaddr2" type="text" name="spotsaddr2" th:value="${spots.spotsaddr2}"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsareaid">景点地域</label>
+					<div class="controls">
+						<select name="spotsareaid">
+							<option th:each="area:${arealist}"
+								th:value="${area.areaid}+','+${area.areaname}" 
+								th:selected="${spots.spotsareaid==area.areaid}">[[${area.areaname}]]</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="spotsopentime">开放时间</label>
+					<div class="controls">
+						<input id="spotsopentime" type="text" name="spotsopentime" th:value="${spots.spotsopentime}"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsoneworlds">景点一句话概括</label>
+					<div class="controls">
+						<input id="spotsoneworlds" type="text" name="spotsoneworlds" th:value="${spots.spotsoneworlds}"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsimg">景点封面图片</label>
+					<div class="controls">
+						<!-- 注意：name属性不要和实体的属性名称一样。 -->
+						<input type="file" name="file" th:value="${spots.spotsimg}">
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="spotsdesc">景点详细介绍</label>
+					<div class="controls">
+						<textarea id="spotsdesc" class="ckeditor" name="spotsdesc">[[${spots.spotsdesc}]]</textarea>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsfirst">景点是否首推</label>
+					<div class="controls">
+						<select name="spotsfirst">
+							<option value="0" th:selected="${spots.spotsfirst==0}">否</option>
+							<option value="1" th:selected="${spots.spotsfirst==1}">是</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotshot">景点是否热门</label>
+					<div class="controls">
+						<select name="spotshot">
+							<option value="0" th:selected="${spots.spotshot==0}">否</option>
+							<option value="1" th:selected="${spots.spotshot==1}">是</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="spotsstate">景点状态</label>
+					<div class="controls">
+						<select name="spotsstate">
+							<option value="0" th:selected="${spots.spotsstate==0}">不正常</option>
+							<option value="1" th:selected="${spots.spotsstate==1}">正常</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<input type="submit" class="btn" value="提交" />
+						<button class="btn btn-primary" type="button"
+							onclick="javascript:location.href='/spots/list';">返回</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		 CKEDITOR.replace('spotsdesc');
+	</script>
+</body>
+</html>

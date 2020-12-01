@@ -1,0 +1,403 @@
+*{
+    margin: 0;padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin:0!important;
+}
+a{
+    text-decoration: none;
+    color: #2ca182;
+}
+a:hover{
+    text-decoration: none;
+    color: #2ca182;
+}
+.panda_container{
+    width: 100%;
+    min-width: 1280px;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+.panda_nav_bar{
+    color: #333;
+    background: #F4F4F4;
+}
+.panda_nav_bar .slogan {
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    margin: 10px 0 0 14px;
+}
+.panda_nav_bar_cont{
+    position: relative;/*相对定位*/
+    z-index: 27;
+    min-width: 1280px;
+    max-width: 1280px;
+    height: 36px;
+    margin: 0 auto;
+    background: #F4F4F4;
+}
+.nav-bar-set{
+    position: absolute;/*绝对定位*/
+    right: 0;
+    top: 0;
+    height: 36px;
+}
+.panda_nav_bar .set-list {
+    float: left;/*浮动布局*/
+    height: 12px;
+    line-height: 12px;
+    margin: 11px 0 0 0;
+    border-right: 1px solid #DDDDDD;
+    position: relative;/*相对定位*/
+}
+.panda_nav_bar .person-text {
+    display: inline-block;
+    margin: -12px -1px 0;
+}
+.panda_nav_bar .person-text .set-text {
+    position: relative;/*相对定位*/
+    display: inline-block;
+    padding: 12px 0px;
+    width: 92px;
+    color: #666;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+.panda_nav_bar .set-logIn.set-list .person-text .set-text {
+    width: 120px;
+    color: #2ca182;
+    border-right: none;
+}
+.panda_hd{
+    position: relative;/*相对定位*/
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+.panda_hd .pandaLogo{
+    display: inline-block;
+    width: 126px;
+    height: 43px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+.panda_hd .pandaLogo a {
+    display: block;
+    width: 126px;
+    height: 43px;
+    background: url(../imgs/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.panda_search{
+    position: absolute;/*绝对定位*/
+    top: 25px;
+    left: 170px;
+    width: 28%;
+    font-family: "Microsoft Yahei", Tahoma;
+   
+}
+.panda_search_input{
+    border-radius: 4px;
+    position: absolute;/*绝对定位*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 0 45px 0 5px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #35b795;
+    box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;
+    outline: 0 none;
+    box-sizing:content-box;
+}
+.panda_search_button{
+    position: absolute;/*绝对定位*/
+    top: 1px;
+    right: -51px;
+    width: 42px;
+    height: 28px;
+    cursor: pointer;
+    background-color: rgb(53, 183, 149);
+    border: 0;
+}
+
+.panda_search_button img{
+    width: 18px;
+    height: 18px;
+    margin: 5px auto;
+}
+.panda_nav_single{
+    width: 100%;
+    background: #35b795;
+    height: 40px;
+}
+.panda_nav_single .panda_nav{
+    width: 1280px;
+    margin: 0 auto;
+    height: 40px;
+    background: #35b795;
+}
+.panda_nav_ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+}
+.panda_nav_ul li{
+    float: left;
+}
+.panda_nav_ul li.active{
+    background: #2ca182;
+}
+.panda_nav_ul .panda_nav_li a{
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.panda_nav_ul li.panda_nav_li:hover{
+    background: #2ca182;
+}
+.panda_nav_ul  .divider{
+    width: 1px;
+    height: 14px;
+    padding-left: 0;
+    margin: 13px 0 0;
+    background-color: #2ca182;
+    clear: none;
+    border: none;
+}
+.panda_content{
+    overflow: hidden;
+    width: 1280px;
+    margin: 0 auto;
+}
+.panda_content .hotel_left{
+    width: 860px;
+    margin-top: 10px;
+    float: left;
+}
+.panda_content .hotel_right{
+    width: 300px;
+    float: right;
+}
+.detail_dir{
+    color: #666;
+}
+.detail_dir a{
+    color: #2ca182;
+    text-decoration: none;
+}
+.panda_footer{
+    padding: 28px 0 30px 0;
+    color: #666;
+    margin-top: 0;
+    width: 1180px;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+.hotel_info .name .cn_name{
+    display: inline-block;
+    vertical-align: bottom;
+    font: bold 20px/22px "microsoft yahei",simsun;
+    color: #2ca182;;
+}
+.hotel_info .name .en_name{
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 4px;
+    font: 12px Arial;
+    color: #333;
+}
+.hotel_type{
+    margin: 4px 0;
+}
+.hotel_type .type{
+    color: #fff;
+    background-color: #2ca182;
+    display: inline-block;
+    padding: 1px 4px;
+    margin-left: 3px;
+    height: 16px;
+    line-height: 16px;
+}
+.hotel_type .orange{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 3px;
+    color: #ff9a14;
+}
+.hotel_address{
+    margin-bottom: 5px;
+    line-height: 25px;
+    color: #555;
+}
+.hotel_picList{
+    overflow: hidden;
+}
+.hotel_picList>div{
+    float: left;
+}
+.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.pic9{
+    margin-left: 6px;
+    margin-bottom: 6px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.hotel_picList .pic1{
+    width: 290px;
+    height: 224px;
+    background-image: url(../imgs/hotelDetail/pic1.jpg);
+}
+.hotel_picList .pic2{
+    width: 246px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic2.jpg);
+}
+.hotel_picList .pic3{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic3.jpg);
+}
+.hotel_picList .pic4{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic4.jpg);
+}
+.hotel_picList .pic5{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic5.jpg);
+}
+.hotel_picList .pic6{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic6.jpg);
+}
+.hotel_picList .pic7{
+    width: 246px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic7.jpg)
+}
+.hotel_picList .pic8{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic8.jpg)
+}
+.hotel_picList .pic9{
+    width: 100px;
+    height: 109px;
+    background-image: url(../imgs/hotelDetail/pic9.jpg)
+}
+.detail_title{
+    color: #2ca182;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.hotel_info_comment span{
+    display: inline-block;
+    line-height: 24px;
+}
+.hotel_info_table{
+    margin-top: 30px;
+}
+.detail_table{
+    width: 100%;
+}
+.detail_table>tbody>tr{
+    border-bottom: 1px dashed #111;
+}
+.detail_table th {
+    width: 100px;
+    text-align: left;
+    color: #999;
+    font-weight: normal;
+    border-bottom: 1px dashed #ccc;
+}
+.detail_table td{
+    padding: 8px 0;
+    vertical-align: top;
+    border-bottom: 1px dashed #ccc;
+}
+.policy_list_new li .dot{
+    margin-right: 11px;
+}
+.pay_img{
+    margin-right: 10px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+.button_order{
+    float: right;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.button_order .button_main{
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    background: #ff9a14;
+    width: 76px;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+}
+.button_order .button_skin{
+    border: 1px solid #ffd092;
+    border-top: none;
+    height: 14px;
+    line-height: 14px;
+    color: #ff7d15;
+    background: #ffecd2;
+    width: 74px;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+}
+.hotel_right .traffic_side {
+    margin: 0px 0 10px;
+    padding: 10px 10px 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+.traffic_side .title {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.traffic_side .traffic_item {
+    padding: 10px 0 0 22px;
+    border-top: 1px dashed #ccc;
+}
+.traffic_side p{
+    line-height: 20px;
+}
+.traffic_side .distance {
+    margin-bottom: 10px!important;
+    color: #999;
+}
+.traffic_side .name .rounte {
+    float: right;
+    margin-left: 4px;
+    text-decoration: none;
+    color: #2ca182;
+}

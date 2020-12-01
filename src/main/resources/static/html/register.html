@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/loginRegister.css">
+    <title>注册 盼达旅游网-PANDA</title>
+</head>
+<body>
+    <div class="panda_container">
+        <div class="panda_login">
+            <div class="panda_login_bg">
+                <img src="../imgs/loginRegister/register_bg.jpg" alt="">
+            </div>
+            <div class="panda_register_box">
+                <div class="panda_register_form">
+                    <h2 class="register_title">
+                        盼达Panda-账号注册
+                    </h2>
+                    <form name="myForm" action="" method="">
+                        <ul class="panda_form">
+                            <li>
+                                <input class="panda_form_input" type="text" placeholder="请输入注册的用户名">
+                                <div id="yooo" style="display: none;">11111111</div>
+                            </li>
+                            <li>
+                                <input class="panda_form_input" name="pwd1" type="password" placeholder="请输入登录密码">
+                            </li>
+                            <li>
+                                <input class="panda_form_input" name="pwd2" type="password" placeholder="请确认登录密码">
+                            </li>
+                            <input class="login_submit" type="button" value="注册" onclick="check(this.form)">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function check(form){
+
+            if(form.pwd1.value != form.pwd2.value){
+                alert('密码不一致')
+                document.getElementById('yooo').style.display="block"
+            }else{
+                document.getElementById('yooo').style.display="none"
+            }
+            // document.myForm.submit();
+        }
+    </script>
+</body>
+</html>
